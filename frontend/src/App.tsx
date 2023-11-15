@@ -1,11 +1,15 @@
-import './App.css'
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-     <h1 className='text-primary'>ds vendas</h1>
+      <NavBar />
+      <div className="container">
+        <h1 className="text-primary">ds vendas</h1>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
