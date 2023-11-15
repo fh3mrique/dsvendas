@@ -1,6 +1,7 @@
 import "./App.css";
 import BarCharts from "./components/BarCharts";
 import DataTable from "./components/DataTable";
+import DonutChart from "./components/DonutCharts";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
@@ -16,13 +17,17 @@ function App() {
             <h5 className="text-center text-secondary"> Taxa de sucesso (%)</h5>
             <BarCharts/>
           </div>
-        </div>
 
+          <div className="col-sm-6">
+            <h5 className="text-center text-secondary"> Taxa de sucesso (%)</h5>
+            <DonutChart/>
+          </div>
+        </div>
 
         <div className="py-3">
           <h2 className="text-primary">Todas as vendas</h2>
         </div>
-        
+
         <DataTable/>
       </div>
       <Footer/>
