@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-     <h1>ds vendas</h1>
+     <h1 className='text-primary'>ds vendas</h1>
     </>
   )
 }
