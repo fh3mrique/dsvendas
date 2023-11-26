@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pessoalproject.dsvendas.dtos.SaleDTO;
+import com.pessoalproject.dsvendas.repositories.SellerRepository;
 import com.pessoalproject.dsvendas.services.SaleService;
 
 @RestController
@@ -18,8 +19,13 @@ public class SaleController {
 	@Autowired
 	private SaleService saleService;
 	
+	@Autowired
+	private SellerRepository sellerRepository;
+	
 	@GetMapping
 	public ResponseEntity<Page<SaleDTO>> findAllPageable (Pageable pageable){
+		
+		sellerRepository.findAll();
 		
 		Page<SaleDTO> list = saleService.findAllPageable(pageable);
 		
