@@ -22,14 +22,15 @@ type ChartData = {
 
 const BarCharts = () => {
 
+    //instancia os tipos
     const [chartData, setChartData] = useState<ChartData> ({
             labels: {
-                categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+                categories: []
             },
             series: [
                 {
-                    name: "% Sucesso",
-                    data: [43.6, 67.1, 67.7, 45.6, 71.1]                   
+                    name: "",
+                    data: []                   
                 }
             ]
         }
